@@ -82,12 +82,12 @@ $usersession = {
    			var html    = template( data );
   			$("#allorder").append(html); 
 
-  			
+  			loadScript();
         	});
             		 			
 
   			}
-  			loadScript();
+  			//loadScript();
             server.request({route:{app:'getcheforders'}}).done(function(data){   
             console.log(data);
            	var source   = $("#counts").html();
